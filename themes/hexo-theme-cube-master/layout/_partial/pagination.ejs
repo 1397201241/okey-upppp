@@ -1,4 +1,4 @@
-<% if(page.total > 0) { %>
+<% if(page.total > 1) { %>
 <% let num = Math.ceil(site.posts.length / config.index_generator.per_page) %>
 <ul class="cube-pagination cube-pagination-<% if (num + 2 <= 5) { %><%= 6 %><% } else if (num + 2 <= 7) { %><%= 7 %><% } else { %><%= 9 %><% } %>">
     <% if (page.prev > 0) { %>
